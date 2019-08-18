@@ -3,90 +3,151 @@
 } */
 body{
     background-image: url("../images/darkness.png");
+    font-family: 'Livvic', sans-serif;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgba(64, 64, 64, 0.55);
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0, .7);
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(100,100,100, .6);
-    border-radius: 10px;
-  }
 
-main{
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-#header{
-    background-color:rgba(40, 40, 40, 0);
-    color: white;
-    height: 15vh;
-}
-#main-body{
-    height: 75vh;
+/* Scroll bars */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
     
-}
-#footer{
-    height: 10vh;
-    color: white;
-    background-color:rgba(40, 40, 40, 0);
-}
+
+    ::-webkit-scrollbar-track {
+        
+        background: rgba(0,0,0, .55);
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgba(64, 64, 64, 0.7);
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(100,100,100, .6);
+        border-radius: 10px;
+    }
+/*Basic Layout*/
+    main{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #header{
+        background-color:rgba(40, 40, 40, 0);
+        color: white;
+        height: 15vh;
+    }
+    #header-title{
+        /* text-decoration: underline; */
+    }
+    #main-body{
+        height: 75vh;
+        
+    }
+    #footer{
+        height: 10vh;
+        color: white;
+        background-color:rgba(40, 40, 40, 0);
+    }
 
 /* Portfolio Page */
-#left-panel{
-    color: white;
-    height: 100%;
-    padding-top: 1%;
-    padding-bottom: 3%;
-    
-    
-}
-.tab{
-    background-color: rgba(40, 40, 40, .75);
-    padding-right: 42px;
-    display: inline-block;
-    border:2px solid black;
-    border-top: 2px solid rgba(40, 40, 40, 0);
-    margin-left:-4px;
-    padding-left: 8px;
-    
-}
-#first-tab{
-    margin-left:0px;
-}
-.tab-select{
-    border:2px solid rgba(40, 40, 40, 0);
-}
-#proj-link-block{
-    background-color: rgba(40, 40, 40, .75);
-    overflow-y: scroll;
-    height: 100%;
-    
-    
-}
-.proj-link{
-    display: inline-block;
-    padding: 20px 30px;
-}
+    #left-panel{
+        color: white;
+        height: 100%;
+        padding-top: 1%;
+        padding-bottom: 3%;
+        
+        
+    }
+    .tab{
+        background-color: rgba(40, 40, 40, .75);
+        padding-right: 42px;
+        display: inline-block;
+        border:2px solid black;
+        border-top: 2px solid rgba(40, 40, 40, 0);
+        margin-left:-4px;
+        padding-left: 8px;
+        
+    }
+    #first-tab{
+        margin-left:0px;
+    }
+    .tab-select{
+        border:2px solid rgba(40, 40, 40, 0);
+    }
+    .proj-link-block{
+        background-color: rgba(40, 40, 40, .75);
+        overflow-y: scroll;
+        height: 100%;
+        
+        
+    }
+    .proj-link{
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        min-width: 100%;
+        color: white;
+    }
+    .proj-link:hover{
+        background-color: rgba(200,200,200, .3);
+        /* border: 1px solid rgba(255, 255, 255, .2); */
+    }
+    #proj-link-select{
+        background-color: rgba(128,128,128, .8);
+        border: 2px solid rgba(255, 255, 255, .2);
+    }
 
 
-#right-panel{
-    background-color: rgba(0,0,0,0);
-    color: white;
-    
-}
+
+    #right-panel{
+        color: white;
+        display: inline;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    #active-preview{
+        display: inherit;
+    }
+    /* .vg-trivia-preview{
+        height: 100%;
+        width: 100%;
+        background-color:hotpink;
+        display: none;
+    } */
+    .preview-panel{
+        height: 100%;
+        width: 100%;
+        display: none;
+        overflow-y: scroll;
+        background-color: rgba(40, 40, 40, .75);
+    }
+    .preview-image{
+        background-color: blue;
+        margin: 20px 80px;
+        height: 65%;
+    }
+    .sample-image{
+        height: 100%;
+        width: 100%;
+    }
+    .preview-descrip{
+        margin: 20px 60px;
+    }
+    .preview-links{
+        margin: 10px 50px;
+        padding-left: 30%;
+    }
+    .link-icons{
+        height:40px;
+        width: 40px;
+        margin-left: 10px;
+        
+    }
+    .prev-link{
+        color: white;
+        text-decoration: underline;
+    }
+
