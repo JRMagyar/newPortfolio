@@ -73,7 +73,7 @@ body{
         height: 100%;
         padding-top: 1%;
         padding-bottom: 3%;
-        
+
         
     }
     .tab{
@@ -86,18 +86,20 @@ body{
         padding-left: 8px;
         
     }
-    #first-tab{
+    .first-tab{
         margin-left:0px;
     }
-    .tab-select{
+    #tab-select{
         border:2px solid rgba(40, 40, 40, 0);
     }
     .proj-link-block{
         background-color: rgba(40, 40, 40, .75);
         overflow-y: scroll;
         height: 100%;
-        
-        
+        display: none;
+    }
+    #selected-block{
+        display: inherit;
     }
     .proj-link{
         display: inline-block;
@@ -127,12 +129,6 @@ body{
     #active-preview{
         display: inherit;
     }
-    /* .vg-trivia-preview{
-        height: 100%;
-        width: 100%;
-        background-color:hotpink;
-        display: none;
-    } */
     .preview-panel{
         height: 100%;
         width: 100%;

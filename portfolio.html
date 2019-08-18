@@ -7,6 +7,8 @@
    crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
     </head>
 
     <body>
@@ -17,35 +19,29 @@
                     <a class="head-link" href="index.html">About</a>
                     <a class="head-link" href="portfolio.html">Portfolio</a>
                     <a class="head-link" href="contact.html">Contact</a>
+                    <a class="head-link" href="#">Resume</a>
                 </div>
             </div>
 
             
             <div class="row" id="main-body">
                 <div class="col-4" id="left-panel">
-                    <a id="first-tab" class="tab tab-select">JS</a>
-                    <a class="tab">C#</a>
-                    <div class="proj-link-block" id="js-block">
-                        <a id="proj-link-select" class="proj-link">Trivia Game</a>
+                    <a data-tab="js-block" id="tab-select" class="tab first-tab">JS</a>
+                    <a data-tab="csharp-block" class="tab">C#</a>
+
+                    <div class="proj-link-block js-block" id="selected-block">
+                        <a data-info="vg-trivia-preview" id="proj-link-select" class="proj-link">Trivia Game</a>
                         <br>
-                        <a class="proj-link">Project Two</a>
-                        <br>
-                        <a class="proj-link">Project Three</a>
-                        <br>
-                        <a class="proj-link">Project Four</a>
-                        <br>
-                        <a class="proj-link">Project Five</a>
-                        <br>
-                        <a class="proj-link">Project Six</a>
-                        <br>
-                        <a class="proj-link">Project Seven</a>
-                        <br>
-                        <a class="proj-link">Project Eight</a>
-                        <br>
-                        <a class="proj-link">Project Nine</a>
-                        <br>
-                        <a class="proj-link">Project Ten</a>
+                        <a data-info="nott-preview" class="proj-link">Night on the Town</a>
                     </div>
+
+                    <div class="proj-link-block csharp-block">
+                        <a class="proj-link">COMING SOON</a>
+                    </div>
+
+
+
+
                 </div>
 
                 <div class="col-8" id="right-panel">
@@ -65,7 +61,29 @@
                             <a class="prev-link" href="#">Github Repo</a>
                         </div>
                     </div>
+
+                    <div class="nott-preview preview-panel">
+                            <div class="preview-image">
+                                <img class="sample-image" src="assets/images/night-out.jpg">
+                            </div>
+                            <div class="preview-descrip">
+                                <p>
+                                        An application designed to provide user with bars, restaurants, and current or future events in any city of their choice utilizing multiple APIs and HTML5 geolocation. If the user does not want to allow geolocation access they can search for locations by entering their city and state or zipcode.
+                                </p>
+                            </div>
+                            <div class="preview-links">
+                                <img src="assets/images/screen.png" class="link-icons">
+                                <a class="prev-link" href="#">Live Page</a>
+                                <img src="assets/images/github-mark.png" class="link-icons">
+                                <a class="prev-link" href="#">Github Repo</a>
+                            </div>
+                        </div>
+                
+                
+                
+                
                 </div>
+                
             </div>
 
             <div class="row" id="footer">
