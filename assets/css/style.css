@@ -1,39 +1,92 @@
-.clearfix {
+/* .clearfix {
     overflow: auto;
-}
+} */
 body{
     background-image: url("../images/darkness.png");
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(64, 64, 64, 0.55);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0, .7);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(100,100,100, .6);
+    border-radius: 10px;
+  }
 
 main{
     margin-left: 5vw;
     margin-right: 5vw;
 }
 #header{
-    background-color: #ca8927;
+    background-color:rgba(40, 40, 40, 0);
     color: white;
     height: 15vh;
 }
 #main-body{
     height: 75vh;
-    background-color: red;
+    
 }
 #footer{
     height: 10vh;
     color: white;
-    background-color: rebeccapurple;
+    background-color:rgba(40, 40, 40, 0);
 }
 
 /* Portfolio Page */
 #left-panel{
-    background-color: rgb(53, 106, 122);
     color: white;
-    height: auto;
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    
     
 }
+.tab{
+    background-color: rgba(40, 40, 40, .75);
+    padding-right: 42px;
+    display: inline-block;
+    border:2px solid black;
+    border-top: 2px solid rgba(40, 40, 40, 0);
+    margin-left:-4px;
+    padding-left: 8px;
+    
+}
+#first-tab{
+    margin-left:0px;
+}
+.tab-select{
+    border:2px solid rgba(40, 40, 40, 0);
+}
+#proj-link-block{
+    background-color: rgba(40, 40, 40, .75);
+    overflow-y: scroll;
+    height: 100%;
+    
+    
+}
+.proj-link{
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+
 #right-panel{
-    background-color: rgb(81, 119, 63);
+    background-color: rgba(0,0,0,0);
     color: white;
     
 }
