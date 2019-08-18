@@ -37,9 +37,21 @@ body{
         background-color:rgba(40, 40, 40, 0);
         color: white;
         height: 15vh;
+        width: 100%;
     }
-    #header-title{
-        /* text-decoration: underline; */
+    #header-links{
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        
+    }
+    .head-link{
+        margin-left: 20px;
+        color: white;
+        font-size: 20px;
+    }
+    .head-link:hover{
+        color: white;
     }
     #main-body{
         height: 75vh;
@@ -47,8 +59,12 @@ body{
     }
     #footer{
         height: 10vh;
-        color: white;
+        width: 100%;
+        color: rgba(255, 255, 255, .4);
         background-color:rgba(40, 40, 40, 0);
+        justify-content: center;
+        padding-top: 3%; 
+
     }
 
 /* Portfolio Page */
@@ -125,7 +141,6 @@ body{
         background-color: rgba(40, 40, 40, .75);
     }
     .preview-image{
-        background-color: blue;
         margin: 20px 80px;
         height: 65%;
     }
