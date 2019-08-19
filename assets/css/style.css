@@ -141,11 +141,12 @@ body{
         height: 65%;
     }
     .sample-image{
-        height: 100%;
+        max-height: 100%;
         width: 100%;
     }
     .preview-descrip{
         margin: 20px 60px;
+        text-indent: 20px;
     }
     .preview-links{
         margin: 10px 50px;
@@ -161,4 +162,31 @@ body{
         color: white;
         text-decoration: underline;
     }
+    .prev-link:hover{
+        color: gray;
+    }
 
+
+
+    /*about page*/
+    #my-photo{
+        max-height: 100%;
+        max-width: 100%
+    }
+    #about-text{
+        padding-top: 15%;
+        max-height: 100%;
+        max-width: 100%;
+        text-indent: 30px;
+        
+    }
+
+    #contact-block{
+        color: white;
+        text-align: center;
+        font-size: 35px;
+    }
+    .contact-body{
+        align-content: center;
+        justify-content: center;
+    }
